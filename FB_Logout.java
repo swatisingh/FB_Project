@@ -1,0 +1,68 @@
+package com.example.tests;
+
+import com.thoughtworks.selenium.*;
+import java.util.regex.Pattern;
+
+public class FB_Logout extends SeleneseTestCase {
+	public void setUp() throws Exception {
+		setUp("http://www.facebook.com/", "*chrome");
+	}
+	public void testFB_Logout() throws Exception {
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.facebook.com/" />
+<title>FB_Logout</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FB_Logout</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>NumberFour.Swati@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pass</td>
+	<td>swati1234</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='navAccountLink']/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log Out']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label/input</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
+	}
+}
